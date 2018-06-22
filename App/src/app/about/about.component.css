@@ -1,0 +1,57 @@
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    color:black;
+    font-size: 50px;
+}
+h2 {
+    
+    text-align: center;
+    color:black;
+    font-size: 40px;
+}
+
+iframe {
+    border: solid 5px;
+    border-color:#4CAF50;
+    margin-left: 610px;
+   
+}
+
+img {
+    width: 25%;
+    height: 30%;
+    border: solid 5px;
+    border-color:#4CAF50;
+    margin-left: 710px;
+   
+}
+.ned {
+    text-align: center;
+    margin-top: 90px;
+    color: 	black;
+}
+.neds {
+    width: 35%;
+    height: 30%;
+    border-color:#4CAF50;
+    margin-left: 155px;
+    color: black;
+}
+h3 {
+    text-align: center;
+    color: black;
+}
+
+.lone {
+    margin-left:480px;
+    text-align: left;
+    font-style: arial;
+    font-size: 120%;
+    color: black;
+}
+
+ul {
+    margin-left:0px;
+    text-align: left;
+}

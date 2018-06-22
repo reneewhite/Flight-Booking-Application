@@ -1,0 +1,81 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.topnav {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid  #4CAF50;
+}
+
+.topnav a.active {
+  border-bottom: 3px solid  #4CAF50;
+}
+</style>
+<body>
+
+<div class="topnav">
+        <a class="active" href="/events">Home</a>
+        <a routerLink="/booking">Booking</a>
+        <a routerLink="/about">About us</a>
+        <a routerLink="/contact">Contact us</a>
+      </div>
+<div style="padding-left:16px">
+        
+</div>
+   
+     
+<h1>Contact Us</h1>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="firstname">First Name</label>
+    <input class="input" type="text" placeholder="Your name" name="firstname" [(ngModel)]="firstname">
+    <label for="lastname">Last Name</label>
+    <input class="input" type="text" placeholder="Your surname" name="surname" [(ngModel)]="surname">
+    <label for="country">Country</label>
+    <select id="country" name="country" [(ngModel)]="country">
+      <option value="southafrica">South Africa</option>
+      <option value="zimbabwe">Zimbabwe</option>
+      <option value="maputo">Maputo</option>
+    </select>
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Comment here....." [(ngModel)]="subject" style="height:200px"></textarea>
+
+    <input type="submit" (click)="contact()" value="Submit">
+  </form>
+</div>
+
+<h3>Find us on: </h3>
+
+<!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+
+      
+</body>
+
+
+
+
+

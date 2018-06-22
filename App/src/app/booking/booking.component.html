@@ -1,0 +1,59 @@
+<h1>Flight Bookings</h1>
+<style>
+    #mySidenav a {
+        position: absolute;
+        left: -80px;
+        transition: 0.3s;
+        padding: 15px;
+        width: 100px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 0 5px 5px 0;
+    }
+    
+    #mySidenav a:hover {
+        left: 0;
+    }
+    
+    #events {
+        top: 20px;
+        background-color: #45a049;
+    }
+    
+    #contact {
+        top: 80px;
+        background-color: black;
+    }
+    
+    #about {
+        top: 140px;
+        background-color: #45a049;
+    }
+    
+    #booking {
+        top: 200px;
+        background-color: black;
+    }
+    </style>
+    
+    <div id="mySidenav" class="sidenav">
+        <a id="events" routerLink="/events">Home</a>
+        <a id="contact" routerLink="/contact">Contact</a>
+        <a id="about" routerLink="/about">About</a>
+        <a id="booking" routerLink="/booking">Booking</a>
+    </div>
+<div class="form-container">
+<input class="input" type="text" placeholder="Name" name="firstname" [(ngModel)]="firstname"><br><br>
+<input class="input" type="text" placeholder="Surname" name="surname" [(ngModel)]="surname"><br><br>
+<input class="input" type="text" placeholder="Age" name="age" [(ngModel)]="age"><br><br>
+<input class="input" type="text" placeholder="Departure" name="departure" [(ngModel)]="departure"><br><br>
+<input class="input" type="text" placeholder="Arrival" name="arrival" [(ngModel)]="arrival"><br><br>
+<input class="input" type="date" placeholder="Date" name="date" [(ngModel)]="date"><br><br>
+<input class="input" type="text" placeholder="Traveller" name="traveller" [(ngModel)]="traveller"><br><br>
+<input type="submit" (click)="booking()" value="Book">
+</div>
+
+<div class="footer">
+    <p>@SA Flights bookings</p>
+  </div>

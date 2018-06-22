@@ -1,0 +1,56 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.topnav {
+  overflow: hidden;
+  background-color: #4CAF50 ;
+  padding: 10px;
+  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid black;
+}
+
+.topnav a.active {
+  border-bottom: 3px solid  black;
+}
+</style>
+
+<body>
+    
+<div class="topnav">
+        <a class="active" href="/events">Home</a>
+        <a routerLink="/booking">Booking</a>
+        <a routerLink="/contact">Contact us</a>
+        <a routerLink="/about">About us</a>
+      </div>
+      
+      <div style="padding-left:16px">
+        
+      </div>
+   
+      
+    <h1>Welcome to flight SA</h1>
+    <p>To book a flight please click the explore button below!!!</p>
+    <div class="nav">
+        <img src="../../assets/gal.jpg" alt="image">
+    </div>
+<input type="submit" (click)="navigation()" value="Explore">
+</body>
+
+
+
+
