@@ -44,14 +44,16 @@ h3 {
 }
 
 .lone {
-    margin-left:480px;
-    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     font-style: arial;
     font-size: 120%;
     color: black;
 }
 
 ul {
-    margin-left:0px;
-    text-align: left;
+   
+    text-align: center;
 }
